@@ -137,6 +137,7 @@ export const StyledLink = styled(Link)`
         border-bottom-width: 1px;
     }
     @media (max-width: 768px) {
+        background-image: none;
         color: ${colors.backgroundGrey};
     }
 `;
