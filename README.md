@@ -1,10 +1,6 @@
 # Portfolio
 
 <h3 align="center"><a href="https://thomasjean.dev/">thomasjean.dev</a></h3>
-<p align="center">
-    [![Netlify Status](https://api.netlify.com/api/v1/badges/3ed6e500-c585-4969-905c-bed746aba34c/deploy-status)]
-</p>
-
 
 ---
 
