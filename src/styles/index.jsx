@@ -126,15 +126,13 @@ export const Ul = styled.ul`
 
 export const StyledLink = styled(Link)`
     padding: 10px 15px;
-    background-image: linear-gradient(60deg, #1c6e8c, #274156);
-    background-clip: text;
-    color: transparent;
+    color: ${colors.darkMenu};
     text-decoration: none;
     font-size: 18px;
     text-align: center;
     &:hover {
-        border-bottom: thick solid black;
-        border-bottom-width: 1px;
+        border-left: thick solid black;
+        font-weight: 900;
     }
     @media (max-width: 768px) {
         background-image: none;
@@ -247,7 +245,7 @@ export const SquaredTitle = styled.div`
         content: '';
         position: absolute;
         left: 0;
-        background-color: ${colors.dark};
+        background-color: ${colors.backgroundDark};
         height: 100%;
         width: 10px;
     }

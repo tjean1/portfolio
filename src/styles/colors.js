@@ -5,6 +5,7 @@ const colors = {
     backgroundDark: '#000000',
     backgroundGrey: '#CCCCCC',
     dark: '#2F2E41',
+    darkMenu: '#342E37',
     white: '#FFFFFE',
 };
 
