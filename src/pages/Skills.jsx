@@ -18,8 +18,15 @@ const secondaryTechnologies = [
     'PostgreSQL',
     'Python',
     'Sass',
+    'Bootstrap',
+];
+
+const blockchainTechnologies = [
     'Blockchain',
+    'Ethereum',
     'Solidity',
+    'Web3.js',
+    'Polkadot',
 ];
 
 const services = [
@@ -41,6 +48,12 @@ const allTechnologies = technologies.map((tech) => (
 const allSecondaryTechnologies = secondaryTechnologies.map(
     (secondaryTechnology) => (
         <Skill name={secondaryTechnology} key={secondaryTechnology} />
+    )
+);
+
+const allBlockchainTechnologies = blockchainTechnologies.map(
+    (blockchainTechnology) => (
+        <Skill name={blockchainTechnology} key={blockchainTechnology} />
     )
 );
 
@@ -73,6 +86,17 @@ function Skills() {
                     <h4>Autres technologies :</h4>
                 </SquaredTitle>
                 <Tools>{allSecondaryTechnologies}</Tools>
+            </SkillsListing>
+
+            <SkillsListing
+                style={{
+                    '--degree': '180deg',
+                }}
+            >
+                <SquaredTitle>
+                    <h4>Technologies Web 3.0 :</h4>
+                </SquaredTitle>
+                <Tools>{allBlockchainTechnologies}</Tools>
             </SkillsListing>
 
             <SkillsListing
