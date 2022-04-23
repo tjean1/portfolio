@@ -11,6 +11,7 @@ function Home() {
                     </Avatar>
                     <h1>{data.name}</h1>
                     <h2>{data.title}</h2>
+                    <h2>{data.title2}</h2>
                     <p>{data.descriptionBackend}</p>
                     <p>{data.descriptionFullstack}</p>
                     <p>{data.descriptionBlockchain}</p>

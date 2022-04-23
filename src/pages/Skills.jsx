@@ -17,6 +17,7 @@ const secondaryTechnologies = [
     'MySQL',
     'PostgreSQL',
     'Python',
+    'Rust',
     'Sass',
     'Bootstrap',
 ];
@@ -27,19 +28,20 @@ const blockchainTechnologies = [
     'Solidity',
     'Web3.js',
     'Polkadot',
+    'Substrate',
 ];
 
 const services = [
     'Git',
-    'GitHub',
-    'Jenkins',
+    'Amazon EC2',
     'Docker',
     'Kubernetes',
     'Ansible',
     'ELK',
+    'PM2',
 ];
 
-const tools = ['GitKraken', 'Postman', 'npm', 'Jest', 'VSCode', 'Trello'];
+const tools = ['VSCode', 'npm', 'Postman', 'Jest', 'Jenkins', 'Trello', 'Jira'];
 
 const allTechnologies = technologies.map((tech) => (
     <Skill name={tech} key={tech} />
@@ -83,17 +85,6 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Autres technologies :</h4>
-                </SquaredTitle>
-                <Tools>{allSecondaryTechnologies}</Tools>
-            </SkillsListing>
-
-            <SkillsListing
-                style={{
-                    '--degree': '180deg',
-                }}
-            >
-                <SquaredTitle>
                     <h4>Technologies Web 3.0 :</h4>
                 </SquaredTitle>
                 <Tools>{allBlockchainTechnologies}</Tools>
@@ -105,7 +96,18 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Services :</h4>
+                    <h4>Autres langages et outils :</h4>
+                </SquaredTitle>
+                <Tools>{allSecondaryTechnologies}</Tools>
+            </SkillsListing>
+
+            <SkillsListing
+                style={{
+                    '--degree': '180deg',
+                }}
+            >
+                <SquaredTitle>
+                    <h4>Infrastructures et services :</h4>
                 </SquaredTitle>
                 <Tools>{allServices}</Tools>
             </SkillsListing>
@@ -116,7 +118,7 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Outils et tests :</h4>
+                    <h4>Environnement, tests et gestion :</h4>
                 </SquaredTitle>
                 <Tools>{allTools}</Tools>
             </SkillsListing>
