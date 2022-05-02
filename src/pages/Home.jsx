@@ -13,8 +13,8 @@ function Home() {
                     <h2>{data.title}</h2>
                     <h2>{data.title2}</h2>
                     <p>{data.descriptionBackend}</p>
-                    <p>{data.descriptionFullstack}</p>
                     <p>{data.descriptionBlockchain}</p>
+                    <p>{data.descriptionFullstack}</p>
                     <p>{data.descriptionGithub}</p>
                     <Github>
                         <a

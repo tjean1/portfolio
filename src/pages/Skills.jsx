@@ -28,6 +28,7 @@ const blockchainTechnologies = [
     'Solidity',
     'Web3.js',
     'Polkadot',
+    'Polkadot.js',
     'Substrate',
 ];
 
