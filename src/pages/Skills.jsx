@@ -2,22 +2,20 @@ import React from 'react';
 import { SkillsContainer, SkillsListing, SquaredTitle, Tools } from '../styles';
 import Skill from '../components/Skill';
 
-const technologies = [
+const backTechnologies = [
     'JavaScript',
-    'MongoDB',
-    'Express.js',
-    'ReactJS',
     'Node.js',
-    'React Native',
-    'Redux',
-];
-
-const secondaryTechnologies = [
-    'PHP',
-    'MySQL',
-    'PostgreSQL',
+    'Express.js',
     'Python',
     'Rust',
+    'MongoDB',
+    'MySQL',
+];
+
+const frontTechnologies = [
+    'ReactJS',
+    'Redux',
+    'React Native',
     'Sass',
     'Bootstrap',
 ];
@@ -44,15 +42,13 @@ const services = [
 
 const tools = ['VSCode', 'npm', 'Postman', 'Jest', 'Jenkins', 'Trello', 'Jira'];
 
-const allTechnologies = technologies.map((tech) => (
+const allBackTechnologies = backTechnologies.map((tech) => (
     <Skill name={tech} key={tech} />
 ));
 
-const allSecondaryTechnologies = secondaryTechnologies.map(
-    (secondaryTechnology) => (
-        <Skill name={secondaryTechnology} key={secondaryTechnology} />
-    )
-);
+const allFrontTechnologies = frontTechnologies.map((secondaryTechnology) => (
+    <Skill name={secondaryTechnology} key={secondaryTechnology} />
+));
 
 const allBlockchainTechnologies = blockchainTechnologies.map(
     (blockchainTechnology) => (
@@ -75,9 +71,9 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Stack technique :</h4>
+                    <h4>Stack Back-end :</h4>
                 </SquaredTitle>
-                <Tools>{allTechnologies}</Tools>
+                <Tools>{allBackTechnologies}</Tools>
             </SkillsListing>
 
             <SkillsListing
@@ -97,9 +93,9 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Autres langages et outils :</h4>
+                    <h4>Autres technologies et outils front/mobile :</h4>
                 </SquaredTitle>
-                <Tools>{allSecondaryTechnologies}</Tools>
+                <Tools>{allFrontTechnologies}</Tools>
             </SkillsListing>
 
             <SkillsListing
