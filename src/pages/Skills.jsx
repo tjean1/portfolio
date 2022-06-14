@@ -42,6 +42,14 @@ const services = [
 
 const tools = ['VSCode', 'npm', 'Postman', 'Jest', 'Jenkins', 'Trello', 'Jira'];
 
+const softSkills = [
+    'Communication',
+    'Esprit critique',
+    'Travail en équipe',
+    'Autonomie',
+    'Pédagogie',
+];
+
 const allBackTechnologies = backTechnologies.map((tech) => (
     <Skill name={tech} key={tech} />
 ));
@@ -61,6 +69,10 @@ const allServices = services.map((service) => (
 ));
 
 const allTools = tools.map((tool) => <Skill name={tool} key={tool} />);
+
+const allSoftSkills = softSkills.map((soft) => (
+    <Skill name={soft} key={soft} />
+));
 
 function Skills() {
     return (
@@ -118,6 +130,17 @@ function Skills() {
                     <h4>Environnement, tests et gestion :</h4>
                 </SquaredTitle>
                 <Tools>{allTools}</Tools>
+            </SkillsListing>
+
+            <SkillsListing
+                style={{
+                    '--degree': '180deg',
+                }}
+            >
+                <SquaredTitle>
+                    <h4>Soft Skills :</h4>
+                </SquaredTitle>
+                <Tools>{allSoftSkills}</Tools>
             </SkillsListing>
         </SkillsContainer>
     );

@@ -15,6 +15,7 @@ function Home() {
                     <p>{data.descriptionBackend}</p>
                     <p>{data.descriptionBlockchain}</p>
                     <p>{data.descriptionFullstack}</p>
+                    <p>{data.descriptionCV}</p>
                     <p>{data.descriptionGithub}</p>
                     <Github>
                         <a
