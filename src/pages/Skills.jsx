@@ -12,16 +12,7 @@ const backTechnologies = [
     'MySQL',
 ];
 
-const frontTechnologies = [
-    'ReactJS',
-    'Redux',
-    'React Native',
-    'Sass',
-    'Bootstrap',
-];
-
 const blockchainTechnologies = [
-    'Blockchain',
     'Ethereum',
     'Solidity',
     'Web3.js',
@@ -40,6 +31,8 @@ const services = [
     'PM2',
 ];
 
+const frontTechnologies = ['ReactJS', 'Redux', 'React Native', 'Bootstrap'];
+
 const tools = ['VSCode', 'npm', 'Postman', 'Jest', 'Jenkins', 'Trello', 'Jira'];
 
 const softSkills = [
@@ -54,10 +47,6 @@ const allBackTechnologies = backTechnologies.map((tech) => (
     <Skill name={tech} key={tech} />
 ));
 
-const allFrontTechnologies = frontTechnologies.map((secondaryTechnology) => (
-    <Skill name={secondaryTechnology} key={secondaryTechnology} />
-));
-
 const allBlockchainTechnologies = blockchainTechnologies.map(
     (blockchainTechnology) => (
         <Skill name={blockchainTechnology} key={blockchainTechnology} />
@@ -66,6 +55,10 @@ const allBlockchainTechnologies = blockchainTechnologies.map(
 
 const allServices = services.map((service) => (
     <Skill name={service} key={service} />
+));
+
+const allFrontTechnologies = frontTechnologies.map((secondaryTechnology) => (
+    <Skill name={secondaryTechnology} key={secondaryTechnology} />
 ));
 
 const allTools = tools.map((tool) => <Skill name={tool} key={tool} />);
@@ -94,20 +87,9 @@ function Skills() {
                 }}
             >
                 <SquaredTitle>
-                    <h4>Technologies Web 3.0 :</h4>
+                    <h4>Technologies Blockchain :</h4>
                 </SquaredTitle>
                 <Tools>{allBlockchainTechnologies}</Tools>
-            </SkillsListing>
-
-            <SkillsListing
-                style={{
-                    '--degree': '180deg',
-                }}
-            >
-                <SquaredTitle>
-                    <h4>Autres technologies et outils front/mobile :</h4>
-                </SquaredTitle>
-                <Tools>{allFrontTechnologies}</Tools>
             </SkillsListing>
 
             <SkillsListing
@@ -119,6 +101,17 @@ function Skills() {
                     <h4>Infrastructures et services :</h4>
                 </SquaredTitle>
                 <Tools>{allServices}</Tools>
+            </SkillsListing>
+
+            <SkillsListing
+                style={{
+                    '--degree': '180deg',
+                }}
+            >
+                <SquaredTitle>
+                    <h4>Autres technologies et outils front/mobile :</h4>
+                </SquaredTitle>
+                <Tools>{allFrontTechnologies}</Tools>
             </SkillsListing>
 
             <SkillsListing
